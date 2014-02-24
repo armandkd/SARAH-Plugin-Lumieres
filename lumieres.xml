@@ -1,0 +1,18 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleLumieres" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleLumieres" scope="public">
+    <example>Sarah éteint la lumière du salon</example>
+    <tag>out.action=new Object(); </tag>
+    <item>Sarah</item>
+    <one-of>
+      <item>éteint<tag>out.action.etat="0";</tag></item>
+      <item>allume<tag>out.action.etat="1";</tag></item>
+      <item>rallume<tag>out.action.etat="1";</tag></item>
+    </one-of>
+	<item>la lumière</item>
+    <one-of>
+      <item>du salon<tag>out.action.id="du salon";</tag></item>
+      <item>du bureau<tag>out.action.id="du bureau";</tag></item>
+    </one-of>
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/lumieres";</tag>
+  </rule>
+</grammar>

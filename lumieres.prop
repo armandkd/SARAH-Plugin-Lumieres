@@ -1,0 +1,8 @@
+{
+  "modules" : { 
+    "lumieres"  : {
+      "description": "Contrôle des lumières",
+      "version": "1.0"
+    }
+  }
+}
